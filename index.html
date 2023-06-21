@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Sign up | GAZE ™</title>
 </head>
 <body>
+    <main class="content">
+        <div class="left-side">
+            <h1 class="logo">GAZE. <sup>&trade;</sup></h1>
+            <div class="text-content">
+                <div class="quote">
+                    <p>❝</p>
+                    <p>Go anywhere you want in a</p>
+                    <p>Galaxy full of wonders!</p>
+                </div>
+                <div class="cta">
+                    <p class="credit">Photo by <a href="https://unsplash.com/@nickbrunner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Brunner</a> on <a href="https://unsplash.com/s/photos/astronaut?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                </div>
+  
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="description">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p id="yoda">You <em>know</em> you want to.</p>
+                
+            </div>
+
+            <form action="#">
+                <div class="input-container">
+                    <label for="f-name"></label>
+                    <input type="text" name="f-name" id="f-name" required>
+                    <span>
+                        FIRST NAME
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="l-name"></label>
+                    <input type="text" name="f-name" id="l-name" required>
+                    <span>
+                        LAST NAME
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="mail"></label>
+                    <input type="email" name="mail" id="mail" required>
+                    <span>
+                        E-MAIL
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <span>
+                        PHONE
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="pwd"></label>
+                    <input type="password" name="pwd" id="pwd" required>
+                    <span>
+                            PASSWORD
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="confirm-pwd"></label>
+                    <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+                    <span>
+                        CONFIRM PASSWORD
+                    </span>
+                    <div class="error"></div>
+                </div>
+                <div id="btn">
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p>Already have an account..?<span class="highlight-text"> LOG IN</span></p>
+                    <div class="error"></div>
+                </div>                
+            </form>
+
+        </div>
+    </main>
     
 </body>
 </html>
