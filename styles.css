@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
+:root {
+    --light-text: #fff;
+    --dark-text: #08090C;
+}
 
 * {
     box-sizing: border-box;
@@ -43,12 +47,17 @@ html {
 .quote p {
     font-size: 40px;
     font-weight: 600;
+    color: var(--light-text);
 }
 
 .cta .credit {
     text-align: center;
-    font-size: 10px;
+    font-size: 7px;
+    color: var(--light-text);
+}
+.credit a {
     text-decoration: none;
+    color: var(--light-text);
 }
 
 .content .right-side {
@@ -78,19 +87,21 @@ form {
 
 form .input-container {
     position: relative;
-    width: calc(100%/2 - 20px);
+    min-width: calc(100%/2 - 20px);
+    width: auto;
 }
 
 .input-container input {
     display: block;
     border: none;
     border-radius: 4px;
-    margin-top: 2rem;
+    margin: 1rem 0;
     padding: 6px;
     width: 70%;
     height: 45px;
     outline: none;
     border-bottom: 1px solid black;
+    transition: all .4s;
 }
 
 .input-container  span {
@@ -99,10 +110,10 @@ form .input-container {
     top: 0;
     left: 0;
     pointer-events: none;
-    padding: 46px 8px 8px 6px;
+    padding: 46px 8px 6px;
     font-size: 13px;
     color: gray;
-    transition: all .4s;
+    transition: all .4s ease-in-out;
 }
 
 #btn {
@@ -117,26 +128,38 @@ form .input-container {
     border-radius: 5px;
     border: none;
     font-size: 18px;
+    transition: all .3s linear;
+}
+
+#btn button:hover {
+    color: var(--light-text);
+    background-color: var(--dark-text);
 }
 
 .highlight-text {
-    color: aquamarine;
+    color: #31C4C4;
 }
 
 /* INPUT EFFECTS STYLING */
 input:focus,
 input:focus-visible {
-    border: 1px solid black;
+    border: 1px solid var(--dark-text);
     outline: none;
 }
 
 input:valid {
-    border: 1px solid black;
+    border: 1px solid var(--dark-text);
 }
 
 input:focus ~ span,
 input:valid ~ span {
-    padding: 25px 8px 8px 6px;
+    position: absolute;
+    left: 4px;
+    padding: .4rem;
+    color: var(--light-text);
+    background-color: var(--dark-text);
+    border-radius: .5rem;
+    font-size: 0.7em;
 }
 
 /* ANIMATIONS */
