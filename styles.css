@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
     --light-text: #fff;
@@ -66,6 +66,7 @@ html {
     justify-content: center;
     padding: 0 4rem;
     gap: 4rem;
+    background: var(--light-text);
 }
 
 .description p {
@@ -79,16 +80,17 @@ html {
     padding-top: 1rem;
 }
 
-form {
+.form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-form .input-container {
+.form .input-container {
     position: relative;
     min-width: calc(100%/2 - 20px);
     width: auto;
+    padding-bottom: 20px;
 }
 
 .input-container input {
@@ -115,6 +117,45 @@ form .input-container {
     color: gray;
     transition: all .4s ease-in-out;
 }
+
+.input-container i {
+    position: absolute;
+    top: 25%;
+    left: 62%;
+    visibility: hidden;
+    font-size: 13px;
+}
+
+.input-container.success input {
+    border-color: #2ecc71;
+}
+
+.input-container.error input {
+    border-color: #e74c3c;
+}
+
+.input-container.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.input-container.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.input-container small {
+    bottom: 0;
+    left: 0;
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.input-container.error small {
+    visibility: visible;
+}
+
+
 
 #btn {
     margin-top: 2rem;

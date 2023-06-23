@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <title>Sign up | GAZE ™</title>
 </head>
 <body>
@@ -33,14 +34,16 @@
                 
             </div>
 
-            <form action="#">
+            <form action="#" class="form" id="form">
                 <div class="input-container">
                     <label for="f-name"></label>
                     <input type="text" name="f-name" id="f-name" required>
                     <span>
                         FIRST NAME
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-container">
                     <label for="l-name"></label>
@@ -48,7 +51,9 @@
                     <span>
                         LAST NAME
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-container">
                     <label for="mail"></label>
@@ -56,7 +61,9 @@
                     <span>
                         E-MAIL
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-container">
                     <label for="phone"></label>
@@ -64,7 +71,9 @@
                     <span>
                         PHONE
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-container">
                     <label for="pwd"></label>
@@ -72,7 +81,9 @@
                     <span>
                             PASSWORD
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div class="input-container">
                     <label for="confirm-pwd"></label>
@@ -80,17 +91,20 @@
                     <span>
                         CONFIRM PASSWORD
                     </span>
-                    <div class="error"></div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
                 </div>
                 <div id="btn">
                     <button type="submit" class="submit-btn">Create Account</button>
                     <p>Already have an account..?<span class="highlight-text"> LOG IN</span></p>
-                    <div class="error"></div>
                 </div>                
             </form>
 
         </div>
     </main>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
