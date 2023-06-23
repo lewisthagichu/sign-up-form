@@ -48,6 +48,8 @@ function checkInput() {
 
   if (pwdValue === "") {
     setErrorFor(pwd, "Password cannot be empty");
+  } else if (!isValid(pwdValue)) {
+    setErrorFor(pwd, "Password should have at least 8-16 characters");
   } else {
     setSuccessFor(pwd);
   }
@@ -71,8 +73,6 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
   const inputContainer = input.parentElement;
-  const small = inputContainer.querySelector("small");
-
   inputContainer.className = "input-container success";
 }
 
@@ -80,4 +80,8 @@ function isEmail(userEmail) {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     userEmail
   );
+}
+
+function isValid(userPwd) {
+  return /.{8,16}$/.test(userPwd);
 }
