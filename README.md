@@ -1,7 +1,7 @@
 # sign-up-form
 
 * This is a sign-up form project designed to collect user information for registration purposes.<br />
-* The project is part of theOdinProject curriculum.<br />
+* The project is part of [The Odin Project](https://www.theodinproject.com/)<br />
 * The project aims to create a user-friendly and secure sign-up form with validation checks for input fields such as first name, last name, email, phone number, password, and password confirmation.<br />
 
 # Project Description<br >
