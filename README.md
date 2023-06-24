@@ -1,7 +1,7 @@
 # sign-up-form
 
 * This is a sign-up form project designed to collect user information for registration purposes.<br />
-* The project is part of theOdinProject curriculum.<br />
+* The project is part of [The Odin Project](https://www.theodinproject.com/)<br />
 * The project aims to create a user-friendly and secure sign-up form with validation checks for input fields such as first name, last name, email, phone number, password, and password confirmation.<br />
 
 # Project Description<br >
@@ -13,3 +13,6 @@ The form ensures that users provide valid and complete information before submis
 **Email Validation:** Users must provide a valid email address. The form checks the email field for empty values and validates the email format to prevent incorrect submissions.  
 **Phone Number:** Users need to enter their phone number. The form verifies that the field is not empty.  
 **Password Security:** The project includes a password field that ensures the password meets the required criteria. The form checks for a minimum password length and confirms that the entered passwords match in the confirmation field.  
+
+Live: https://lewisthagichu.github.io/sign-up-form/
+
